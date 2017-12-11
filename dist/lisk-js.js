@@ -124,20 +124,20 @@ LiskAPI.prototype.netHashOptions = function () {
 	return {
 		testnet: {
 			'Content-Type': 'application/json',
-			'nethash': 'da3ed6a45429278bac2666961289ca17ad86595d33b31037615d4b8e8f158bba',
-			'broadhash': 'da3ed6a45429278bac2666961289ca17ad86595d33b31037615d4b8e8f158bba',
-			'os': 'lisk-js-api',
-			'version': '1.0.0',
-			'minVersion': '>=0.5.0',
+			'nethash': '0daee950841005a3f56f6588b4b084695f0d74aaa38b21edab73446064638552',
+			'broadhash': '0daee950841005a3f56f6588b4b084695f0d74aaa38b21edab73446064638552',
+			'os': 'oxy-js-api',
+			'version': '1.3.0',
+			'minVersion': '>=1.1.0',
 			'port': this.port
 		},
 		mainnet: {
 			'Content-Type': 'application/json',
-			'nethash': 'ed14889723f24ecc54871d058d98ce91ff2f973192075c0155ba2b7b70ad2511',
-			'broadhash': 'ed14889723f24ecc54871d058d98ce91ff2f973192075c0155ba2b7b70ad2511',
-			'os': 'lisk-js-api',
-			'version': '1.0.0',
-			'minVersion': '>=0.5.0',
+			'nethash': '4c1170a3edb03f961e5e3f7cedcd25563f0a46ec4aa3342715d09c47b398ea19',
+			'broadhash': '4c1170a3edb03f961e5e3f7cedcd25563f0a46ec4aa3342715d09c47b398ea19',
+			'os': 'oxy-js-api',
+			'version': '1.3.0',
+			'minVersion': '>=1.1.0',
 			'port': this.port
 		}
 	};
@@ -192,12 +192,12 @@ LiskAPI.prototype.setTestnet = function (testnet) {
 	if (this.testnet !== testnet) {
 		this.testnet = testnet;
 		this.bannedPeers = [];
-		this.port = 7000;
+		this.port = 9998;
 		this.selectNode();
 	} else {
 		this.testnet = false;
 		this.bannedPeers = [];
-		this.port = 8000;
+		this.port = 10000;
 		this.selectNode();
 	}
 };
@@ -943,7 +943,7 @@ ParseOfflineRequest.prototype.checkOfflineRequestBefore = function () {
 			return {
 				requestMethod: 'POST',
 				requestUrl: 'transactions',
-				params: { transaction: transaction }
+				params: { transaction: transaction, version: 1.3.0 }
 			};
 		},
 		'signatures': function () {
