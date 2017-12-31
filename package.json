@@ -1,7 +1,7 @@
 {
-  "name": "oxy-nano-js",
+  "name": "lwf-nano-js",
   "version": "0.5.2",
-  "description": "JavaScript library for sending OXY transactions from the client or server",
+  "description": "JavaScript library for sending LWF transactions from the client or server",
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Oxycoin/oxy-nano-js.git"
+    "url": "git+ssh://git@github.com/lwfcoin/lwf-nano-js.git"
   },
   "author": "Lisk Foundation <admin@lisk.io>",
   "license": "GPL-3.0",
@@ -44,16 +44,16 @@
     "sinon": "=2.2.0"
   },
   "bugs": {
-    "url": "https://github.com/Oxycoin/oxy-nano-js/issues"
+    "url": "https://github.com/lwfcoin/lwf-nano-js/issues"
   },
-  "homepage": "https://github.com/Oxycoin/oxy-nano-js#readme",
+  "homepage": "https://github.com/lwfcoin/lwf-nano-js#readme",
   "directories": {
     "doc": "docs",
     "lib": "lib",
     "test": "test"
   },
   "keywords": [
-    "oxy",
+    "lwf",
     "nano",
     "js"
   ]
