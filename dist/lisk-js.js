@@ -85,10 +85,7 @@ function LiskAPI (options) {
 	options = options || {};
 
 	this.defaultPeers = [
-		'51.254.210.64',
-		'51.254.210.69',
-		'139.59.179.52',
-		'146.185.158.174'
+		'wallet.lwf.io'
 	];
 
 	this.defaultSSLPeers = this.defaultPeers;
